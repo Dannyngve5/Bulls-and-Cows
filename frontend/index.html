@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulls and Cows</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+    <section id="menu">
+        <h1>Bulls and Cows</h1>
+
+        <div class="menu_buttons">
+            <button class ="menu_button" id="playAlone">Play Alone</button>
+            <button class ="menu_button" id="playPC">Play Against PC</button>
+            <button class ="menu_button" id="versusLocal">Versus</button>
+            <button class ="menu_button" id="versusOnline">Versus Online</button>
+        </div>
+
+    </section>
+
+    <section id="settings">
+        <h2>Settings</h2>
+        <div class="setting_option">
+            <label>Number of Digits:</label>
+
+            <div class="number_selector">
+                <button type="button">−</button>
+                <span>4</span>
+                <button type="button">+</button>
+            </div>
+        </div>
+
+        <div class="setting_option">
+            <label for="allowDuplicates">Allow duplicates:</label>
+
+            <label class="toggle">
+                <input type="checkbox" id="allowDuplicates">
+                <span class="toggle_slider"></span>
+            </label>
+        </div>
+
+        <button class="menu_button" id="startGame">Start Game</button>
+        <button class="menu_button" id="backMenu">Back to Menu</button>
+    </section>
+
+    <section id="game">
+
+    <button id="backGameMenu">Back to Menu</button>
+
+    <div id="attempts"></div>
+
+    <div class="guess_area">
+
+        <div class="guess_input">
+            <input type="text" id="guess" inputmode="none">
+            <button id="guessButton">Guess</button>
+        </div>
+
+        <div class="number_pad">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>0</button>
+            <button id="deleteNumber">⌫</button>
+        </div>
+
+    </div>
+
+</section>
+
+    <section id="result">
+
+    </section>
+    
+</body>
+</html>
